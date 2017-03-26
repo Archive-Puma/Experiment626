@@ -8,6 +8,11 @@ python:
 
 install:
   - pip install -r requirements
+  - pip install coveralls docopt coverage
 
 script:
   - sudo coverage run experiment626.py --help
+
+after_success:
+  - coveralls
+
