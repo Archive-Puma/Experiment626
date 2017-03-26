@@ -43,9 +43,9 @@ chmod +x experiment626.py
  Please contact with [Kike Puma](https://linkedin.com/in/kikepuma) if you need more information.
 
 ## Screenshots
-![Help](https://github.com/cosasdepuma/experiment626/blob/master/.screenshot/help.png)
-![Banner](https://github.com/cosasdepuma/experiment626/blob/master/.screenshot/nonverbose.png)
-![Verbose](https://github.com/cosasdepuma/experiment626/blob/master/.screenshot/verbose.png)
+![Help](https://github.com/CosasDePuma/Experiment626/blob/master/.screenshots/help.png?raw=true)
+![Banner](https://github.com/CosasDePuma/Experiment626/blob/master/.screenshots/nonverbose.png?raw=true)
+![Verbose](https://github.com/CosasDePuma/Experiment626/blob/master/.screenshots/verbose.png?raw=true)
 
 ### Members
 
