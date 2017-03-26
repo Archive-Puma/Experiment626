@@ -10,10 +10,10 @@ __author__ = "Kike Puma"
 __copyright__ = "Copyright 2007, CosasDePuma"
 __credits__ = ["KikePuma", "CosasDePuma"]
 __license__ = "GNU-3.0"
-__version__ = "2.0.0 Experiment 626"
+__version__ = "2.0.1 Travis Build"
 __maintainer__ = "KikePuma"
 __email__ = "kikefontanlorenzo@gmail.com"
-__status__ = "First Release"
+__status__ = "First Travis Build"
 
 ########################
 ##     CHECK ROOT     ##
