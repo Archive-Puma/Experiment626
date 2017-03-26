@@ -1,18 +1,14 @@
-sudo: required
-
 language: python
-cache: pip
-
+sudo: required
 python:
-  - 2.7
-
+  - "2.7"
 install:
-  - pip install -r requirements
-  - pip install coveralls docopt coverage
-
+  - sudo pip install -r requirements
+  - sudo pip install coveralls
 script:
-  - sudo coverage run experiment626.py -h
-
+  - sudo python experiment626.py --help
 after_success:
+  - sudo coverage experiment626.py -h
   - coveralls
+
 
