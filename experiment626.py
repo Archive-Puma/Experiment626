@@ -10,10 +10,10 @@ __author__ = "Kike Puma"
 __copyright__ = "Copyright 2007, CosasDePuma"
 __credits__ = ["KikePuma", "CosasDePuma"]
 __license__ = "GNU-3.0"
-__version__ = "2.0.1-b Travis Build"
+__version__ = "2.0.1-c"
 __maintainer__ = "KikePuma"
 __email__ = "kikefontanlorenzo@gmail.com"
-__status__ = "First Travis Build"
+__status__ = "Fixed Version"
 
 ########################
 ##     CHECK ROOT     ##
@@ -196,7 +196,7 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 
 #Argument Parser
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(version=__version__ + ' ' + __status__)
 parser.add_argument("keywords", metavar="keywords", type=str, nargs='+', help="keywords to filter tweets")
 parser.add_argument("-c", "--colored", help="color according to the feelings (verbose required)", action="store_true")
 parser.add_argument("-d", "--database", help="Connect to MongoDB and store the data in the collection 'experiment626_'") 
@@ -205,8 +205,8 @@ parser.add_argument("-f", "--feelings", help="show the feeling polarity in the t
 parser.add_argument("-i", "--irony", help="indicates the irony of the text (verbose required)", action="store_true")
 parser.add_argument("-s", "--subjectivity", help="marks the subjectivity of the text (verbose required)", action="store_true")
 parser.add_argument("-p", "--persistence", help="don't delete the MongoDB Collection.", action="store_true")
-parser.add_argument("-v", "--verbose", help="verbose, hide the banner", action="store_true")
-parser.add_argument("--version", help="show the version", action="store_true")
+parser.add_argument("-V", "--verbose", help="verbose, hide the banner", action="store_true")
+
 args = parser.parse_args()
 
 #TwitterApp Keys and Access Tokens
@@ -214,11 +214,6 @@ consumerKey = ''
 consumerSecret = ''
 accessToken = ''
 accessSecret = ''
-
-#Show the version
-if args.version:
-    print STITCH + "Experiment 626\n" + NEUTRAL + __version__ + " " + __status__ + CREDITS + "\nCreated by KikePuma 2017 (https://github.com/KikePuma)" + DEFAULT #Credits
-    sys.exit(0)
 
 #MongoDB Connection (MongoLab Used)
 if args.database:
